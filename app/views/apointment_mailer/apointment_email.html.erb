@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+  <h1>New Appointment Request</h1>
+  <p>Hello Dr. <%= @doctor.name %>,</p>
+  <p>You have a new appointment request:</p>
+  <p>Appointment Date: <%= @apointment.appointment_date %></p>
+  <p><%= link_to 'Approve this Appointment', @approval_url %></p>
+  <p><%= link_to 'Reject this Appointment', @rejection_url %></p> 
+  <p>Thank you!</p>
+</body>
+</html>
